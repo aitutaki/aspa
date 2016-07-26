@@ -1,3 +1,4 @@
-angular.module("aspa").controller("navController", ["$scope", "$rootScope", "$location", function($scope, $rootScope, $location) {
+angular.module("aspa").controller("navController", ["$scope", "$rootScope", "$location", "Basket", function($scope, $rootScope, $location, Basket) {
   // No functionality here yet.
+  
 }]);

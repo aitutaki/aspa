@@ -1,10 +1,15 @@
-angular.module("aspa").controller("homeController", ["$scope", "$rootScope", function($scope, $rootScope) {
+angular.module("aspa").controller("homeController", ["$scope", "$rootScope", "Basket", function($scope, $rootScope, Basket) {
   var _this = this;
   this.headline = "TRILANCO AngularJS Single Page App Template";
+
+  this.addToBasket = function() {
+    Basket.addToBasket();
+  };
 }]);
 
-angular.module("aspa").controller("navController", ["$scope", "$rootScope", "$location", function($scope, $rootScope, $location) {
+angular.module("aspa").controller("navController", ["$scope", "$rootScope", "$location", "Basket", function($scope, $rootScope, $location, Basket) {
   // No functionality here yet.
+  
 }]);
 
 angular.module("aspa").controller("productController", ["$scope", "$rootScope", "$routeParams", "Products", function($scope, $rootScope, $routeParams, Products) {
